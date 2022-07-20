@@ -1,0 +1,590 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Worker开发 · MengCgi帮助文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="梦因想而伟大">
+        
+        
+    
+    <link rel="stylesheet" href="../https://docs.xyjerry.com/mengcgi/gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../https://docs.xyjerry.com/mengcgi/gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../https://docs.xyjerry.com/mengcgi/gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pro_config.html" />
+    
+    
+    <link rel="prev" href="child_profile.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://xyjerry.com/" target="_blank" class="custom-link">Temple of Light</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    环境配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/readme.html">
+            
+                <a href="../chapter1/readme.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/wnmp_init.html">
+            
+                <a href="../chapter1/wnmp_init.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Wnmp安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/fcgi.html">
+            
+                <a href="../chapter1/fcgi.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    FastCgi映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    程序安装
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/init.html">
+            
+                <a href="../chapter2/init.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/start.html">
+            
+                <a href="../chapter2/start.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    程序使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="child_profile.html">
+            
+                <a href="child_profile.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    子配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="worker.html">
+            
+                <a href="worker.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    Worker开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="pro_config.html">
+            
+                <a href="pro_config.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    进阶配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    发布
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/release.html">
+            
+                <a href="../chapter4/release.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    Release
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Worker开发</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x73AF;&#x5883;&#x53D8;&#x91CF;">&#x73AF;&#x5883;&#x53D8;&#x91CF;</h3>
+<p>URL = &#x8FD4;&#x56DE;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;<br>PATH<em>INFO = &#x5BA2;&#x6237;&#x7AEF;&#x63D0;&#x4F9B;&#x7684;&#x8DEF;&#x5F84;&#x4FE1;&#x606F;<br>APPL_PHYSICAL_PATH = &#x4E0E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5143;&#x6570;&#x636E;&#x5E93;&#x8DEF;&#x5F84;&#x76F8;&#x5E94;&#x7684;&#x7269;&#x7406;&#x8DEF;&#x5F84;<br>PATH_TRANSLATED = &#x901A;&#x8FC7;&#x7531;&#x865A;&#x62DF;&#x81F3;&#x7269;&#x7406;&#x7684;&#x6620;&#x5C04;&#x540E;&#x5F97;&#x5230;&#x7684;&#x8DEF;&#x5F84;<br>SCRIPT_NAME = &#x6267;&#x884C;&#x811A;&#x672C;&#x7684;&#x540D;&#x79F0;<br>QUERY_STRING = &#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x5167;&#x5BB9;<br>HTTP_REFERER = &#x8BF7;&#x6C42;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5167;&#x5BB9;<br>SERVER_PORT = &#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#x7684;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53E3;&#x53F7;<br>REMOTE_ADDR = &#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x7684;IP&#x5730;&#x5740;<br>REMOTE_HOST = &#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x540D;&#x79F0;<br>LOCAL_ADDR = &#x8FD4;&#x56DE;&#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;<br>HTTP_HOST = &#x8FD4;&#x56DE;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;<br>SERVER_NAME = &#x670D;&#x52A1;&#x5668;&#x7684;&#x4E3B;&#x673A;&#x540D;&#x3001;DNS&#x5730;&#x5740;&#x6216;IP&#x5730;&#x5740;<br>REQUEST_METHOD = &#x63D0;&#x51FA;&#x8BF7;&#x6C42;&#x7684;&#x65B9;&#x6CD5;&#x6BD4;&#x5982;GET&#x3001;HEAD&#x3001;POST&#x7B49;&#x7B49;<br>SERVER_PORT_SECURE = &#x5982;&#x679C;&#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#x7684;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53E3;&#x4E3A;&#x5B89;&#x5168;&#x7AEF;&#x53E3;&#x65F6;&#xFF0C;&#x5219;&#x4E3A;1&#xFF0C;&#x5426;&#x5219;&#x4E3A;0<br>SERVER_PROTOCOL = &#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528;&#x7684;&#x534F;&#x8BAE;&#x7684;&#x540D;&#x79F0;&#x548C;&#x7248;&#x672C;<br>SERVER_SOFTWARE = &#x5E94;&#x7B54;&#x8BF7;&#x6C42;&#x5E76;&#x8FD0;&#x884C;&#x7F51;&#x5173;&#x7684;&#x670D;&#x52A1;&#x5668;&#x8F6F;&#x4EF6;&#x7684;&#x540D;&#x79F0;&#x548C;&#x7248;&#x672C;<br>ALL_HTTP = &#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x6240;&#x6709;HTTP&#x6807;&#x5934;&#xFF0C;&#x524D;&#x7F00;HTTP</em><br>ALL<em>RAW = &#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x6240;&#x6709;HTTP&#x6807;&#x5934;,&#x5176;&#x7ED3;&#x679C;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x65F6;&#x4E00;&#x6837;&#xFF0C;&#x6CA1;&#x6709;&#x524D;&#x7F00;HTTP</em><br>APPL_MD_PATH = &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5143;&#x6570;&#x636E;&#x5E93;&#x8DEF;&#x5F84;<br>CONTENT_LENGTH = &#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x51FA;&#x5167;&#x5BB9;&#x7684;&#x957F;&#x5EA6;<br>HTTPS = &#x5982;&#x679C;&#x8BF7;&#x6C42;&#x7A7F;&#x8FC7;&#x5B89;&#x5168;&#x901A;&#x9053;&#xFF08;SSL&#xFF09;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;ON&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x6765;&#x81EA;&#x975E;&#x5B89;&#x5168;&#x901A;&#x9053;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;OFF<br>INSTANCE_ID = IIS&#x5B9E;&#x4F8B;&#x7684;ID&#x53F7;<br>INSTANCE_META_PATH = &#x54CD;&#x5E94;&#x8BF7;&#x6C42;&#x7684;IIS&#x5B9E;&#x4F8B;&#x7684;&#x5143;&#x6570;&#x636E;&#x5E93;&#x8DEF;&#x5F84;<br>HTTP_ACCEPT_ENCODING = &#x8FD4;&#x56DE;&#x5167;&#x5BB9;&#x5982;&#xFF1A;GZIP,DEFLATE<br>HTTP_ACCEPT_LANGUAGE = &#x8FD4;&#x56DE;&#x5167;&#x5BB9;&#x5982;&#xFF1A;EN-US<br>HTTP_CONNECTION = &#x8FD4;&#x56DE;&#x5167;&#x5BB9;&#xFF1A;KEEP-ALIVE<br>HTTP_COOKIE = &#x8FD4;&#x56DE;&#x5185;&#x5BB9;&#xFF1A;Cookie&#x7684;&#x503C;<br>HTTP_USER_AGENT = &#x53D6;&#x51FA;&#x7528;&#x6237;&#x6D4F;&#x89C8;&#x5668;&#x7C7B;&#x578B; &#x8FD4;&#x56DE;&#x5167;&#x5BB9;&#xFF1A;MOZILLA/4.0(COMPATIBLE;MSIE6.0;WINDOWSNT5.1;SV1)<br>AUTH_PASSWORD = &#x5F53;&#x4F7F;&#x7528;&#x57FA;&#x672C;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x65F6;&#xFF0C;&#x5BA2;&#x6237;&#x5728;&#x5BC6;&#x7801;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x7684;&#x5BC6;&#x7801;<br>AUTH_TYPE = &#x662F;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x811A;&#x672C;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7528;&#x65BC;&#x68C0;&#x9A8C;&#x7528;&#x6237;&#x7684;&#x9A8C;&#x8BC1;&#x65B9;&#x6CD5;<br>AUTH_USER = &#x4EE3;&#x8BC1;&#x7684;&#x7528;&#x6237;&#x540D;<br>CONTENT_TYPE = &#x5BA2;&#x6237;&#x53D1;&#x9001;&#x7684;FORM&#x5167;&#x5BB9;&#x6216;HTTPPUT&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<h6 id="&#x8BF7;&#x6C42;&#x5934;&#x5B57;&#x6BB5;&#x83B7;&#x53D6;">&#x8BF7;&#x6C42;&#x5934;&#x5B57;&#x6BB5;&#x83B7;&#x53D6;</h6>
+<p>&#x4F8B;&#x5982;&#x8BF7;&#x6C42;&#x5934;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;<code>AuthToken</code>&#x5B57;&#x6BB5;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5728;&#x5B50;&#x914D;&#x7F6E;&#x7684;<code>serverVar</code>&#x4E2D;&#x586B;&#x5165;<code>HTTP_AUTHTOKEN</code>&#x6765;&#x83B7;&#x53D6;&#x3002;&#x53D8;&#x91CF;&#x540D;&#x5B57;&#x6BCD;&#x5FC5;&#x987B;&#x5927;&#x5199;&#xFF0C;</p>
+<hr>
+<p>MengCgi&#x7528;&#x547D;&#x4EE4;&#x884C;&#x65B9;&#x5F0F;&#x542F;&#x52A8;Worker&#x7A0B;&#x5E8F;&#xFF0C;&#x53C2;&#x6570;&#x5982;&#x4E0B;</p>
+<table>
+<thead>
+<tr>
+<th>&#x4F4D;&#x7F6E;</th>
+<th>&#x89E3;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#xFF08;GET/POST&#xFF09;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>&#x94FE;&#x63A5;&#x53D8;&#x91CF;&#xFF08;Query String&#xFF09;&#x7684;&#x53D8;&#x91CF;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>&#x94FE;&#x63A5;&#x53D8;&#x91CF;&#x957F;&#x5EA6;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Post&#x63D0;&#x4EA4;&#x7684;&#x6570;&#x636E;&#x7684;&#x53D8;&#x91CF;&#x5730;&#x5740;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Post&#x63D0;&#x4EA4;&#x7684;&#x6570;&#x636E;&#x957F;&#x5EA6;.&#x9ED8;&#x8BA4;&#x4E3A;0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Cookie&#x6570;&#x636E;&#x53D8;&#x91CF;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cookie&#x6570;&#x636E;&#x957F;&#x5EA6;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>&#x8981;&#x6C42;&#x7684;&#x670D;&#x52A1;&#x5668;&#x53D8;&#x91CF;&#x53D8;&#x91CF;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>&#x670D;&#x52A1;&#x5668;&#x53D8;&#x91CF;Json&#x957F;&#x5EA6;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;IP&#xFF08;1.1.1.1&#xFF09;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>MengCgi&#x5185;&#x90E8;&#x53E5;&#x67C4;&#xFF0C;&#x5728;&#x5904;&#x7406;&#x5B8C;&#x6210;&#x540E;&#x8BF7;&#x4F20;&#x9012;&#x7ED9; Worker_Callback&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>MengCgi Pid &#x7528;&#x4E8E;OpenProcess</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Worker_Callback&#x65B9;&#x6CD5;&#x5730;&#x5740;&#x3002;&#x7528;&#x4E8E;&#x8FDC;&#x7A0B;Call</td>
+</tr>
+</tbody>
+</table>
+<h5 id="gmt&#x65F6;&#x95F4;&#x793A;&#x4F8B;">GMT&#x65F6;&#x95F4;&#x793A;&#x4F8B;</h5>
+<p>Sun, 01 May 2022 13:38:56 GMT</p>
+<h3 id="call&#x53C2;&#x6570;&#x89E3;&#x91CA;">_Call&#x53C2;&#x6570;&#x89E3;&#x91CA;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x7528;&#x9014;&#x89E3;&#x91CA;</th>
+<th>&#x793A;&#x4F8B;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proc_handle</td>
+<td>MengCgi&#x8FDB;&#x7A0B;&#x53E5;&#x67C4;</td>
+<td>100</td>
+</tr>
+<tr>
+<td>addr</td>
+<td>Worker_Callback&#x65B9;&#x6CD5;&#x5730;&#x5740;</td>
+<td>/</td>
+</tr>
+<tr>
+<td>mcgi_output</td>
+<td>&#x8FD4;&#x56DE;&#x7684;Document&#x6570;&#x636E;&#xFF0C;&#x9700;&#x8981;&#x4E8B;&#x5148;&#x5728;MengCgi&#x8FDB;&#x7A0B;&#x4E2D;&#x521B;&#x5EFA;&#x8FDC;&#x7A0B;&#x5185;&#x5B58;&#x540E;&#x4F20;&#x9012;&#x5185;&#x5B58;&#x5730;&#x5740;&#x6574;&#x6570;</td>
+<td>/</td>
+</tr>
+<tr>
+<td>mcgi_extradata</td>
+<td>Header&#x3001;Cookies&#x7B49;&#x6570;&#x636E;&#xFF0C;&#x5185;&#x5B58;&#x5730;&#x5740;</td>
+<td>/</td>
+</tr>
+</tbody>
+</table>
+<h5 id="extradata&#x793A;&#x4F8B;">ExtraData&#x793A;&#x4F8B;</h5>
+<pre class="language-"><code class="lang-Json">{
+    &quot;headers&quot;: [
+        {
+            &quot;fieldname&quot;: &quot;header_field1&quot;,
+            &quot;fieldvalue&quot;: &quot;a1&quot;
+        },
+        {
+            &quot;fieldname&quot;: &quot;header_field2&quot;,
+            &quot;fieldvalue&quot;: &quot;b2&quot;
+        }
+    ],
+    &quot;cookies&quot;: [
+        {
+            &quot;cookiename&quot;: &quot;cexample&quot;,
+            &quot;value&quot;: &quot;test&quot;,
+            &quot;expire&quot;: &quot;Sun, 01 May 2022 13:38:56 GMT&quot;,
+            &quot;wwwpath&quot;: &quot;/admin&quot;,
+            &quot;domain&quot;: &quot;xyjerry.com&quot;
+        }
+    ],
+    &quot;status&quot;: &quot;200 OK&quot;,
+    &quot;thread_handle&quot;: 12345
+}
+</code></pre>
+<p>&#x5177;&#x4F53;&#x89C1; Demo &#x4F8B;&#x7A0B;</p>
+<p><strong>&#x8BF7;&#x4E00;&#x5B9A;&#x5148;&#x5145;&#x5206;&#x7406;&#x89E3;Demo&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x7684;&#x610F;&#x4E49;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x3002;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x9020;&#x6210;&#x5185;&#x5B58;&#x6EA2;&#x51FA;&#xFF0C;&#x7A0B;&#x5E8F;&#x5D29;&#x6E83;&#x7B49;&#x540E;&#x679C;</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="child_profile.html" class="navigation navigation-prev " aria-label="Previous page: 子配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="pro_config.html" class="navigation navigation-next " aria-label="Next page: 进阶配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Worker开发","level":"1.4.2","depth":2,"next":{"title":"进阶配置","level":"1.4.3","depth":2,"path":"chapter3/pro_config.md","ref":"chapter3/pro_config.md","articles":[]},"previous":{"title":"子配置","level":"1.4.1","depth":2,"path":"chapter3/child_profile.md","ref":"chapter3/child_profile.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-plus","-highlight","prism","prism-themes","back-to-top-button","insert-logo"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"sidebar-style":{"title":"MengCgi帮助文档","author":"梦因想而伟大"},"insert-logo":{"style":"width:65px;border-radius:5px;","url":"https://s4.ax1x.com/2021/12/23/TG6Oun.jpg"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{},"prism":{},"prism-themes":{},"back-to-top-button":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"梦因想而伟大","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MengCgi帮助文档","language":"zh-hans","links":{"sidebar":{"Temple of Light":"https://xyjerry.com/"}},"gitbook":"*","description":"基于Windows平台的FastCgi通用网关接口代理"},"file":{"path":"chapter3/worker.md","mtime":"2022-07-20T03:25:00.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-20T03:31:37.893Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook.js"></script>
+    <script src="../https://docs.xyjerry.com/mengcgi/gitbook/theme.js"></script>
+    
+        
+        <script src="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../https://docs.xyjerry.com/mengcgi/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
