@@ -303,7 +303,7 @@
         };
         const App = () => {
             const [data] = createResource(() =>
-                fetch("./reporter.json").then((res) => res.json())
+                fetch("./SourceHanSerif/reporter.json").then((res) => res.json())
             );
             createEffect(() => {
                 if (data()) {
@@ -330,7 +330,7 @@
                     </div>
                     ${CharList(data().data)}`;
             return html`<div>
-                ${() => (data.loading ? `<div>加载中</div>` : content())}
+                ${() => (data.loading ? `Loading Graph` : content())}
             </div>`;
         };
 
